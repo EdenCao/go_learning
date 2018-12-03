@@ -23,7 +23,8 @@ func main() {
 		resp.Body.Close()
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
-		}
+    }
+    fmt.Printf("%s", resp.Status)
 		fmt.Printf("%s", os.Stdout)
 	}
 }
